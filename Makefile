@@ -1,5 +1,8 @@
 #---------------------------------------------------------------------
 # Makefile for Verilog Simulation (Xcelium) & Synthesis (Genus)
+
+# Source: VNCHIP Talent Program
+# Reference: https://vnchip-inc.com/
 #---------------------------------------------------------------------
 SHELL := /bin/bash
 
