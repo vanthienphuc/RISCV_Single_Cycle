@@ -18,12 +18,12 @@ module RegisterFile (
             for (i = 0; i < 32; i = i + 1)
                 registers[i] <= 32'b0;
         end else if (reg_write && (addrD != 5'd0)) begin
-            registers[addrD] <= dataD;
+            registers[addrD] <= dataD; // Write data
         end
     end
 
-    assign dataA = (addrA == 5'd0) ? 32'b0 : registers[addrA];
-    assign dataB = (addrB == 5'd0) ? 32'b0 : registers[addrB];
+    assign dataA = (addrA == 5'd0) ? 32'b0 : registers[addrA]; // Read data
+    assign dataB = (addrB == 5'd0) ? 32'b0 : registers[addrB]; // Read data
 endmodule
 
 
